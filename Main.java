@@ -11,6 +11,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        
+        //chance card setup
         int money = 0;
         int turnsToMiss = 0;
         int tileNum;
@@ -61,7 +63,8 @@ public class Main {
         }
         System.out.println(money);
         System.out.println(turnsToMiss);
-        //animal/tile creation
+        
+        //animal/tile setup
         dolphin = new Animal(dolphin, 0, 60, 2, 0, 1);
         whale = new Animal(whale, 0, 60, 2, 0, 2);
         shark = new Animal(shark, 0, 60, 2, 0, 3);
