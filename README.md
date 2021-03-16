@@ -1,4 +1,6 @@
 # New-Animopoly
 Waheyy its working
 BEGONE BASKETBALL MAN I KNOW NOT WHO YOU ARE
-very nice
+
+
+welcome to a totally new game with an innovative concept
