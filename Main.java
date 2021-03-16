@@ -11,8 +11,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        
-        //chance card setup
         int money = 0;
         int turnsToMiss = 0;
         int tileNum;
@@ -63,8 +61,7 @@ public class Main {
         }
         System.out.println(money);
         System.out.println(turnsToMiss);
-        
-        //animal/tile setup
+        //animal/tile creation
         dolphin = new Animal(dolphin, 0, 60, 2, 0, 1);
         whale = new Animal(whale, 0, 60, 2, 0, 2);
         shark = new Animal(shark, 0, 60, 2, 0, 3);
@@ -74,12 +71,12 @@ public class Main {
         badger = new Animal(badger, 0, 140, 4.5, 0, 7);
         squirrel = new Animal(squirrel, 0, 140, 4.5, 0, 8);
         deer = new Animal(deer, 0, 140, 4.5, 0, 9);
-        velociraptor = new Animal(velociraptor, 0, 1500, 50, 0, 10);
+        raptor = new Animal(velociraptor, 0, 1500, 50, 0, 10);
         lion = new Animal(lion, 0, 350, 11.5, 0, 11);
         zebra = new Animal(zebra, 0, 350, 11.5, 0, 12);
         koala = new Animal(koala, 0, 180, 6, 0, 14);
         kangaroo = new Animal(kangaroo, 0, 180, 6, 0, 15);
-        thornyDevil = new Animal(thornyDevil, 0, 180, 6, 0, 16);
+        lizard = new Animal(thornyDevil, 0, 180, 6, 0, 16);
         polarBear = new Animal(polarBear, 0, 220, 7, 0, 17);
         penguin = new Animal(penguin, 0, 220, 7, 0, 18);
         seal = new Animal(seal, 0, 220, 7, 0, 19);
@@ -89,6 +86,49 @@ public class Main {
         trex = new Animal(trex, 0, 1500, 50, 0, 23);
         rhino = new Animal(rhino, 0, 350, 11.5, 0, 24);
         elephant = new Animal(elephant, 0, 350, 11.5, 0, 25);
+        
+        Board();
     }
+    public static void Board(){
+
+        //Currently prints uneditable board 
+        
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("|         |         |         |         |         |         |         |         |");
+        System.out.println("|  Start  | Dolphin |  Whale  |  Shark  |   Dog   |   Cat   |  Rabbit |  Badger |");
+        System.out.println("|         |    1    |    2    |    3    |    4    |    5    |    6    |    7    |");
+        System.out.println("|         |   OCE   |   OCE   |   OCE   |   PET   |   PET   |   PET   |   FOR   |");
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("|         |                                                           |         |");
+        System.out.println("| Elephant|                                                           | Squirrel|");
+        System.out.println("|   25    |                                                           |    8    |");
+        System.out.println("|   SAV   |                                                           |   FOR   |");
+        System.out.println("-----------                                                           -----------");
+        System.out.println("|         |                                                           |         |");
+        System.out.println("|  Rhino  |                                                           |   Deer  |");
+        System.out.println("|   24    |                                                           |    9    |");
+        System.out.println("|   SAV   |                                                           |   FOR   |");
+        System.out.println("-----------                                                           -----------");
+        System.out.println("|         |                                                           |         |");
+        System.out.println("|  T-Rex  |                                                           |  Raptor |");
+        System.out.println("|   23    |                                                           |    10   |");
+        System.out.println("|  DINO!  |                                                           |   DINO! |");
+        System.out.println("-----------                                                           -----------");
+        System.out.println("|         |                                                           |         |");
+        System.out.println("| Panther |                                                           |   Lion  |");
+        System.out.println("|   22    |                                                           |    11   |");
+        System.out.println("|   RAI   |                                                           |    SAV  |");
+        System.out.println("-----------                                                           -----------");
+        System.out.println("|         |                                                           |         |");
+        System.out.println("| Gorilla |                                                           |   Zebra |");
+        System.out.println("|   21    |                                                           |    12   |");
+        System.out.println("|   RAI   |                                                           |    SAV  |");
+        System.out.println("---------------------------------------------------------------------------------");
+        System.out.println("|         |         |         |         |         |         |         |         |");
+        System.out.println("|  Parrot |   Seal  | Penguin |PolarBear|  Lizard | Kangaroo|  Koala  |   Miss  |");
+        System.out.println("|   20    |    19   |    18   |    17   |    16   |    15   |    14   |    a    |");
+        System.out.println("|   RAI   |   ART   |   ART   |   ART   |   OUT   |   OUT   |   OUT   |   turn  |");
+        System.out.println("---------------------------------------------------------------------------------");
+
 }
 
