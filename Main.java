@@ -22,7 +22,16 @@ public class Main {
         player four = new player("%", 2000, 0, 0, 4, false, true);
         System.out.println("Player four is the '%' symbol");
         
-   
+        //Makes the "playerList" array
+        ArrayList<player> playerList= new ArrayList<>();
+
+        playerList.add(one);
+        playerList.add(two);
+        playerList.add(three);
+        playerList.add(four);
+        
+        
+        
         //chance card setup
         int money = 0;
         int turnsToMiss = 0;
