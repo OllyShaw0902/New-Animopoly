@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        
+    //setup    
         //Instantiate all 4 player objects
         player one = new player("!", 2000, 0, 0, 1, false, true);
         System.out.println("Player one is the '!' symbol");
@@ -22,16 +22,7 @@ public class Main {
         player four = new player("%", 2000, 0, 0, 4, false, true);
         System.out.println("Player four is the '%' symbol");
         
-        //Makes the "playerList" array
-        ArrayList<player> playerList= new ArrayList<>();
-
-        playerList.add(one);
-        playerList.add(two);
-        playerList.add(three);
-        playerList.add(four);
-        
-        
-        
+   
         //chance card setup
         int money = 0;
         int turnsToMiss = 0;
@@ -39,34 +30,24 @@ public class Main {
         int cardNumber=drawCard();
         System.out.println(cardNumber);
         if (cardNumber == 1){
-            System.out.println("Gain £100!");
             money = money + 100;
         }else if (cardNumber == 2){
-            System.out.println("Gain £200!");
             money = money + 200;
         }else if (cardNumber == 3){
-            System.out.println("Gain £300!");
             money = money + 300;
         }else if (cardNumber == 4){
-            System.out.println("Gain £400!");
             money = money + 400;
         }else if (cardNumber == 5){
-            System.out.println("Gain £1500!");
             money = money + 500;
         }else if (cardNumber == 6){
-            System.out.println("Lose £100!");
             money = money - 100;
         }else if (cardNumber == 7){
-            System.out.println("Lose £100!");
             money = money - 200;
         }else if (cardNumber == 8){
-            System.out.println("Lose £100!");
             money = money - 300;
         }else if (cardNumber == 9){
-            System.out.println("Lose £100!");
             money = money - 400;
         }else if (cardNumber == 10){
-            System.out.println("Lose £500!");
             money = money - 500;
         }else if (cardNumber == 11){
             turnsToMiss = turnsToMiss + 1;
@@ -107,6 +88,18 @@ public class Main {
         if(diceRolls.get(0) == 1){
             drawCard();
         }
+        
+    //game starts
+        //pseudocode at the moment
+        //if player passes or lands on go then add £500 or £1000
+        if(currentplayer.intitialPosition > currentplayer.currentPosition && currentplayer.currentPosition != 0) {
+            currentplayer.money += 500;
+        }
+        else if(currentplayer.currentPosition == 0) {
+            currentplayer.money += 1000;
+        }
+        
+        
     }
     
     //Dice method
@@ -142,6 +135,8 @@ public class Main {
 
 
         return dice;
+        
+        
     }
     
     public static void Board(){
