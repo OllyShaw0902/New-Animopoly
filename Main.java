@@ -69,26 +69,36 @@ public class Main {
             System.out.println("Lose £500!");
             money = money - 500;
         }else if (cardNumber == 11){
+            System.out.println("Unlucky! Miss one turn");
             turnsToMiss = turnsToMiss + 1;
         }else if (cardNumber == 12){
+            System.out.println("Unlucky! Miss two turns");
             turnsToMiss = turnsToMiss + 2;
         }else if (cardNumber == 13){
+            System.out.println("Go to start");
             tileNum = 0;
             System.out.println(tileNum);
         }else if (cardNumber == 14){
+            System.out.println("Go to miss a turn");
             tileNum = 13;
             System.out.println(tileNum);
         }else if (cardNumber == 15){
+            System.out.println("Move one space forward");
             tileNum=tileNum+1
         }else if (cardNumber == 16){
+            System.out.println("Move two spaces forward");
             tileNum=tileNum+2
         }else if (cardNumber == 17){
+            System.out.println("Move three spaces forward");
             tileNum=tileNum+3
         }else if (cardNumber == 18){
+            System.out.println("Move one space backwards");
             tileNum=tileNum-1
         }else if (cardNumber == 19){
+            System.out.println("Move two spaces backwards");
             tileNum=tileNum-2
         }else if (cardNumber == 20){
+            System.out.println("Move three spaces backwards");
             tileNum=tileNum-3
         }
         System.out.println(money);
