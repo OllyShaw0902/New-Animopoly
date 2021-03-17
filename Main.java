@@ -101,14 +101,16 @@ public class Main {
         
     //game starts
         //pseudocode at the moment
-        //if player passes or lands on go then add £500 or £1000
-        if(currentplayer.intitialPosition > currentplayer.currentPosition && currentplayer.currentPosition != 0) {
-            currentplayer.money += 500;
+        while(currentplayer.in == true) {
+            //if player passes or lands on go then add £500 or £1000
+            getPlayerStats(currentplayer);
+            if(currentplayer.intitialPosition > currentplayer.currentPosition && currentplayer.currentPosition != 0) {
+                currentplayer.money += 500;
+            }
+            else if(currentplayer.currentPosition == 0) {
+                currentplayer.money += 1000;
+            }
         }
-        else if(currentplayer.currentPosition == 0) {
-            currentplayer.money += 1000;
-        }
-        
         
     }
     
