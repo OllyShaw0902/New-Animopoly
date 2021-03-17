@@ -26,5 +26,7 @@ public class player {
         this.in = initialIn;
     }
 
-
+    public void getPlayerStats(int name) {
+        system.out.print("money: £" + name.money + "animals owned: " + Animal.purchased(name));
+    }
 }
