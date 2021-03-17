@@ -12,6 +12,17 @@ public class Main {
 
     public static void main(String[] args) {
         
+        //Instantiate all 4 player objects
+        player one = new player("!", 2000, 0, 0, 1, false, true);
+        System.out.println("Player one is the '!' symbol");
+        player two = new player("?", 2000, 0, 0, 2, false, true);
+        System.out.println("Player two is the '?' symbol");
+        player three = new player("", 2000, 0, 0, 3, false, true);
+        System.out.println("Player three is the '' symbol");
+        player four = new player("%", 2000, 0, 0, 4, false, true);
+        System.out.println("Player four is the '%' symbol");
+        
+   
         //chance card setup
         int money = 0;
         int turnsToMiss = 0;
