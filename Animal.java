@@ -13,7 +13,7 @@ public class Animal {
         tileNum=inputTileNum;
     }
 
-    public ArrayList<char> occupiedBy<Player> = new ArrayList<char>();
+    public ArrayList<occupiedBy> = new ArrayList<>();
        occupiedBy.add("*");
        occupiedBy.add("!");
        occupiedBy.add("?");
