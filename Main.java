@@ -86,7 +86,7 @@ public class Main {
         diceRolls = Dice();
 
         if(diceRolls.get(0) == 1){
-            Cards();
+            drawCard();
         }
     }
     
