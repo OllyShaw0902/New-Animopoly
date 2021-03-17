@@ -39,24 +39,34 @@ public class Main {
         int cardNumber=drawCard();
         System.out.println(cardNumber);
         if (cardNumber == 1){
+            System.out.println("Gain £100!");
             money = money + 100;
         }else if (cardNumber == 2){
+            System.out.println("Gain £200!");
             money = money + 200;
         }else if (cardNumber == 3){
+            System.out.println("Gain £300!");
             money = money + 300;
         }else if (cardNumber == 4){
+            System.out.println("Gain £400!");
             money = money + 400;
         }else if (cardNumber == 5){
+            System.out.println("Gain £1500!");
             money = money + 500;
         }else if (cardNumber == 6){
+            System.out.println("Lose £100!");
             money = money - 100;
         }else if (cardNumber == 7){
+            System.out.println("Lose £100!");
             money = money - 200;
         }else if (cardNumber == 8){
+            System.out.println("Lose £100!");
             money = money - 300;
         }else if (cardNumber == 9){
+            System.out.println("Lose £100!");
             money = money - 400;
         }else if (cardNumber == 10){
+            System.out.println("Lose £500!");
             money = money - 500;
         }else if (cardNumber == 11){
             turnsToMiss = turnsToMiss + 1;
