@@ -110,8 +110,12 @@ public class Main {
         }
         
     //game starts
-        //pseudocode at the moment
+        //WIP
+        int currentPlayer = 1;
+        //while the the current player isn't bankrupt continue their turn (part 7 of flow chart)
         while(currentplayer.in == true) {
+            //prints current player stats (part 2 of flow chart)
+            getPlayerStats();
             //if player passes or lands on go then add £500 or £1000
             getPlayerStats(currentplayer);
             if(currentplayer.intitialPosition > currentplayer.currentPosition && currentplayer.currentPosition != 0) {
@@ -121,6 +125,7 @@ public class Main {
                 currentplayer.money += 1000;
             }
         }
+        currentPlayer++;
         
     }
     
