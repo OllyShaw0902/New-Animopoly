@@ -75,22 +75,22 @@ public class Main {
             System.out.println(tileNum);
         }else if (cardNumber == 15){
             System.out.println("Move one space forward");
-            tileNum=tileNum+1
+            tileNum=tileNum+1;
         }else if (cardNumber == 16){
             System.out.println("Move two spaces forward");
-            tileNum=tileNum+2
+            tileNum=tileNum+2;
         }else if (cardNumber == 17){
             System.out.println("Move three spaces forward");
-            tileNum=tileNum+3
+            tileNum=tileNum+3;
         }else if (cardNumber == 18){
             System.out.println("Move one space backwards");
-            tileNum=tileNum-1
+            tileNum=tileNum-1;
         }else if (cardNumber == 19){
             System.out.println("Move two spaces backwards");
-            tileNum=tileNum-2
+            tileNum=tileNum-2;
         }else if (cardNumber == 20){
             System.out.println("Move three spaces backwards");
-            tileNum=tileNum-3
+            tileNum=tileNum-3;
         }
         System.out.println(money);
         System.out.println(turnsToMiss);
