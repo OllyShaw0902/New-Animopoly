@@ -219,7 +219,7 @@ public class Main {
         whale = new Animal(whale, 0, 60, 2, 0, 2);
         shark = new Animal(shark, 0, 60, 2, 0, 3);
         dog = new Animal(dog, 0, 100, 3, 0, 4);
-        cat = new Animal(cat, 0, 100, 3, 0, 5)
+        cat = new Animal(cat, 0, 100, 3, 0, 5);
         rabbit = new Animal(rabbit, 0, 100, 3, 0, 6);
         badger = new Animal(badger, 0, 140, 4.5, 0, 7);
         squirrel = new Animal(squirrel, 0, 140, 4.5, 0, 8);
