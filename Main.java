@@ -6,12 +6,20 @@ public class Main {
     public static int drawCard(){
         Random random = new Random();
 
+package com.company;
+import java.util.*;
+
+public class Main {
+
+    public static int drawCard(){
+        Random random = new Random();
+
         int cardNum = random.nextInt(19) + 1;
         return cardNum;
     }
 
     public static void main(String[] args) {
-    //setup    
+        //setup
         //Instantiate all 4 player objects
         player one = new player("!", 2000, 0, 0, 1, false, true);
         System.out.println("Player one is the '!' symbol");
@@ -21,12 +29,12 @@ public class Main {
         System.out.println("Player three is the '' symbol");
         player four = new player("%", 2000, 0, 0, 4, false, true);
         System.out.println("Player four is the '%' symbol");
-        
-   
+
+
         //chance card setup
         int money = 0;
         int turnsToMiss = 0;
-        int tileNum;
+        int tileNum= 0;
         int cardNumber=drawCard();
         System.out.println(cardNumber);
         if (cardNumber == 1){
@@ -94,13 +102,13 @@ public class Main {
         }
         System.out.println(money);
         System.out.println(turnsToMiss);
-        
+
         //animal/tile setup
         AnimalSetUp();
-        
+
         //board setup
         Board();
-        
+
         //Rolls the dice
         ArrayList<Integer> diceRolls = new ArrayList<Integer>();
         diceRolls = Dice();
@@ -108,8 +116,8 @@ public class Main {
         if(diceRolls.get(0) == 1){
             drawCard();
         }
-        
-    //game starts
+
+        //game starts
         //WIP
         int currentPlayer = 1;
         //while the the current player isn't bankrupt continue their turn (part 7 of flow chart)
@@ -126,9 +134,9 @@ public class Main {
             }
         }
         currentPlayer++;
-        
+
     }
-    
+
     //Dice method
     public static ArrayList<Integer> Dice(){
         Scanner reader = new Scanner(System.in);
@@ -162,14 +170,14 @@ public class Main {
 
 
         return dice;
-        
-        
+
+
     }
-    
+
     public static void Board(){
 
         //Currently prints uneditable board 
-        
+
         System.out.println("---------------------------------------------------------------------------------");
         System.out.println("|         |___OCE___|___OCE___|___OCE___|___PET___|___PET___|___PET___|___FOR___|");
         System.out.println("|  Start  | Dolphin |  Whale  |  Shark  |   Dog   |   Cat   |  Rabbit |  Badger |");
@@ -215,30 +223,32 @@ public class Main {
         System.out.println("---------------------------------------------------------------------------------");
     }
     public static void AnimalSetUp() {
-        dolphin = new Animal(dolphin, 0, 60, 2, 0, 1);
-        whale = new Animal(whale, 0, 60, 2, 0, 2);
-        shark = new Animal(shark, 0, 60, 2, 0, 3);
-        dog = new Animal(dog, 0, 100, 3, 0, 4);
-        cat = new Animal(cat, 0, 100, 3, 0, 5);
-        rabbit = new Animal(rabbit, 0, 100, 3, 0, 6);
-        badger = new Animal(badger, 0, 140, 4.5, 0, 7);
-        squirrel = new Animal(squirrel, 0, 140, 4.5, 0, 8);
-        deer = new Animal(deer, 0, 140, 4.5, 0, 9);
-        raptor = new Animal(raptor, 0, 1500, 50, 0, 10);
-        lion = new Animal(lion, 0, 350, 11.5, 0, 11);
-        zebra = new Animal(zebra, 0, 350, 11.5, 0, 12);
-        koala = new Animal(koala, 0, 180, 6, 0, 14);
-        kangaroo = new Animal(kangaroo, 0, 180, 6, 0, 15);
-        lizard = new Animal(lizard, 0, 180, 6, 0, 16);
-        polarBear = new Animal(polarBear, 0, 220, 7, 0, 17);
-        penguin = new Animal(penguin, 0, 220, 7, 0, 18);
-        seal = new Animal(seal, 0, 220, 7, 0, 19);
-        parrot = new Animal(parrot, 0, 260, 8.5, 0, 20);
-        gorilla = new Animal(gorilla, 0, 260, 8.5, 0, 21);
-        panther = new Animal(panther, 0, 260, 8.5, 0, 22);
-        trex = new Animal(trex, 0, 1500, 50, 0, 23);
-        rhino = new Animal(rhino, 0, 350, 11.5, 0, 24);
-        elephant = new Animal(elephant, 0, 350, 11.5, 0, 25);
+        Animal dolphin = new Animal("dolphin", 0, 60, 2, 0, 1);
+        Animal whale = new Animal("whale", 0, 60, 2, 0, 2);
+        Animal shark = new Animal("shark", 0, 60, 2, 0, 3);
+        Animal dog = new Animal("dog", 0, 100, 3, 0, 4);
+        Animal cat = new Animal("cat", 0, 100, 3, 0, 5);
+        Animal rabbit = new Animal("rabbit", 0, 100, 3, 0, 6);
+        Animal badger = new Animal("badger", 0, 140, 4.5, 0, 7);
+        Animal squirrel = new Animal("squirrel", 0, 140, 4.5, 0, 8);
+        Animal deer = new Animal("deer", 0, 140, 4.5, 0, 9);
+        Animal raptor = new Animal("raptor", 0, 1500, 50, 0, 10);
+        Animal lion = new Animal("lion", 0, 350, 11.5, 0, 11);
+        Animal zebra = new Animal("zebra", 0, 350, 11.5, 0, 12);
+        Animal koala = new Animal("koala", 0, 180, 6, 0, 14);
+        Animal kangaroo = new Animal("kangaroo", 0, 180, 6, 0, 15);
+        Animal lizard = new Animal("lizard", 0, 180, 6, 0, 16);
+        Animal polarBear = new Animal("polarBear", 0, 220, 7, 0, 17);
+        Animal penguin = new Animal("penguin", 0, 220, 7, 0, 18);
+        Animal seal = new Animal("seal", 0, 220, 7, 0, 19);
+        Animal parrot = new Animal("parrot", 0, 260, 8.5, 0, 20);
+        Animal gorilla = new Animal("gorilla", 0, 260, 8.5, 0, 21);
+        Animal panther = new Animal("panther", 0, 260, 8.5, 0, 22);
+        Animal trex = new Animal("trex", 0, 1500, 50, 0, 23);
+        Animal rhino = new Animal("rhino", 0, 350, 11.5, 0, 24);
+        Animal elephant = new Animal("elephant", 0, 350, 11.5, 0, 25);
     }
 }
+
+
 
