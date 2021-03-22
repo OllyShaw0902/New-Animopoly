@@ -2,19 +2,19 @@ package com.company;
 import java.util.ArrayList;
 public class Animal {
     private String name;
-    private int level=1, cost=0, visitCost=0, purchased=0, tileNum=0;
+    private int level=1, cost=0; double visitCost=0; int purchased=0, tileNum=0;
 
     public ArrayList<String> occupiedBy = new ArrayList<>();
 
     //for setup
-    public Animal(String inputName,int inputLevel, int inputCost, int visitCost, int inputPurchased, int inputTileNum) {
+    public Animal(String inputName,int inputLevel, int inputCost, double visitCost, int inputPurchased, int inputTileNum) {
         name=inputName;
         level=inputLevel;
         cost=inputCost;
         purchased=inputPurchased;
         tileNum=inputTileNum;
 
-        occupiedBy.add("*");
+        occupiedBy.add ("*");
         occupiedBy.add("!");
         occupiedBy.add("?");
         occupiedBy.add("%");
@@ -35,7 +35,7 @@ public class Animal {
         return cost;
     }
 
-    public int getVisitCost() {
+    public double getVisitCost() {
         return visitCost;
     }
     public void setVisitCost() {
