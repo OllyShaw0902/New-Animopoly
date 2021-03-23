@@ -3,7 +3,7 @@
 
 package com.company;
 
-public class player {
+public class Player {
     //Declaring variables of player class
     public int number;
     public int money;
@@ -16,7 +16,7 @@ public class player {
     public boolean in;
 
     //Assigns base values when instantiating player classes
-    public player (String initialName, int initialMoney, int initialTileNum, int initialTurnsToMiss, int initialNumber, boolean initialSame, boolean initialIn){
+    public Player (String initialName, int initialMoney, int initialTileNum, int initialTurnsToMiss, int initialNumber, boolean initialSame, boolean initialIn){
         this.name = initialName;
         this.money = initialMoney;
         this.tileNum = initialTileNum;
