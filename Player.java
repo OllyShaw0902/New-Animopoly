@@ -1,6 +1,4 @@
 //Code for the Player class
-
-
 package com.company;
 
 public class Player {
@@ -9,7 +7,8 @@ public class Player {
     public int money;
     public int dice1;
     public int dice2;
-    public int tileNum;
+    public int initialPosition;
+    public int currentPosition;
     public boolean same;
     public int turnsToMiss;
     public String name;
@@ -19,13 +18,16 @@ public class Player {
     public Player (String initialName, int initialMoney, int initialTileNum, int initialTurnsToMiss, int initialNumber, boolean initialSame, boolean initialIn){
         this.name = initialName;
         this.money = initialMoney;
-        this.tileNum = initialTileNum;
+        this.initialPosition = initialTileNum;
+        this.currentPosition = initialTileNum;
         this.turnsToMiss = initialTurnsToMiss;
         this.number = initialNumber;
         this.same = initialSame;
         this.in = initialIn;
     }
 
+    intitialPosition = currentPosition;
+    currentPosition = 
     public void getPlayerStats(int name) {
         system.out.print("money: £" + name.money + "animals owned: " + Animal.purchased(name));
     }
