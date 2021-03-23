@@ -2,15 +2,6 @@ package com.company;
 import java.util.*;
 
 public class Main {
-
-    public static int drawCard(){
-        Random random = new Random();
-
-package com.company;
-import java.util.*;
-
-public class Main {
-
     public static int drawCard(){
         Random random = new Random();
 
