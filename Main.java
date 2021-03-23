@@ -10,7 +10,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        //setup
+    //setup
         //Instantiate all 4 player objects
         Player one = new Player("!", 2000, 0, 0, 1, false, true);
         System.out.println("Player one is the '!' symbol");
@@ -108,7 +108,7 @@ public class Main {
             drawCard();
         }
 
-        //game starts
+    //game starts
         //WIP
         int currentPlayer = 1;
         //while the the current player isn't bankrupt continue their turn (part 7 of flow chart)
