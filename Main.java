@@ -232,7 +232,7 @@ public class Main {
     public static void Board(){
 
         //Currently prints uneditable board 
-
+        System.out.println(Player.currentPosition);
         System.out.println("---------------------------------------------------------------------------------");
         System.out.println("|         |___OCE___|___OCE___|___OCE___|___PET___|___PET___|___PET___|___FOR___|");
         System.out.println("|  Start  | Dolphin |  Whale  |  Shark  |   Dog   |   Cat   |  Rabbit |  Badger |");
