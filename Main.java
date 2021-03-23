@@ -12,13 +12,13 @@ public class Main {
     public static void main(String[] args) {
         //setup
         //Instantiate all 4 player objects
-        player one = new player("!", 2000, 0, 0, 1, false, true);
+        Player one = new Player("!", 2000, 0, 0, 1, false, true);
         System.out.println("Player one is the '!' symbol");
-        player two = new player("?", 2000, 0, 0, 2, false, true);
+        Player two = new Player("?", 2000, 0, 0, 2, false, true);
         System.out.println("Player two is the '?' symbol");
-        player three = new player("", 2000, 0, 0, 3, false, true);
+        Player three = new Player("", 2000, 0, 0, 3, false, true);
         System.out.println("Player three is the '' symbol");
-        player four = new player("%", 2000, 0, 0, 4, false, true);
+        Player four = new Player("%", 2000, 0, 0, 4, false, true);
         System.out.println("Player four is the '%' symbol");
 
 
