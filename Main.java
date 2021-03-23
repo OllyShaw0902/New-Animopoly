@@ -193,7 +193,7 @@ public class Main {
     }
 
     //Dice method
-    public static int Dice(){
+    public static ArrayList<Integer> Dice(){
         Scanner reader = new Scanner(System.in);
         Random rand = new Random();
 
