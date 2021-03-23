@@ -109,22 +109,56 @@ public class Main {
         }
 
     //game starts
-        //WIP
-        int currentPlayer = 1;
-        //while the the current player isn't bankrupt continue their turn (part 7 of flow chart)
-        while(currentplayer.in == true) {
+        //WIP     
+        //while the current player isn't bankrupt continue their turn (part 7 of flow chart)
+        while(one.in == true) {
             //prints current player stats (part 2 of flow chart)
-            getPlayerStats();
+            getPlayerStats(one);
             //if player passes or lands on go then add £500 or £1000
-            getPlayerStats(currentplayer);
-            if(currentplayer.intitialPosition > currentplayer.currentPosition && currentplayer.currentPosition != 0) {
-                currentplayer.money += 500;
+            if(one.intitialPosition > one.currentPosition && one.currentPosition != 0) {
+                one.money += 500;
             }
-            else if(currentplayer.currentPosition == 0) {
-                currentplayer.money += 1000;
+            else if(one.currentPosition == 0) {
+                one.money += 1000;
             }
         }
-        currentPlayer++;
+        
+        while(two.in == true) {
+            //prints current player stats (part 2 of flow chart)
+            getPlayerStats(two);
+            //if player passes or lands on go then add £500 or £1000
+            if(two.intitialPosition > two.currentPosition && two.currentPosition != 0) {
+                two.money += 500;
+            }
+            else if(two.currentPosition == 0) {
+                two.money += 1000;
+            }
+        }
+        
+        while(three.in == true) {
+            //prints current player stats (part 2 of flow chart)
+            getPlayerStats(three);
+            //if player passes or lands on go then add £500 or £1000        
+            if(three.intitialPosition > three.currentPosition && three.currentPosition != 0) {
+                three.money += 500;
+            }
+            else if(three.currentPosition == 0) {
+                three.money += 1000;
+            }
+        }
+        
+        while(four.in == true) {
+            //prints current player stats (part 2 of flow chart)
+            getPlayerStats(four);
+            //if player passes or lands on go then add £500 or £1000
+            if(four.intitialPosition > four.currentPosition && four.currentPosition != 0) {
+                four.money += 500;
+            }
+            else if(four.currentPosition == 0) {
+                four.money += 1000;
+            }
+        }
+        
 
     }
 
