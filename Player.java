@@ -27,7 +27,7 @@ public class Player {
     }
 
     intitialPosition = currentPosition;
-    currentPosition = 
+    currentPosition += Dice();
     public void getPlayerStats(int name) {
         system.out.print("money: £" + name.money + "animals owned: " + Animal.purchased(name));
     }
